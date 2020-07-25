@@ -1,0 +1,66 @@
+.clicker {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration: none;
+  color: #fff;
+}
+.clicker.hidden {
+  display: none;
+}
+.hiddendiv {
+  height: 0px;
+  width: 0px;
+  background-color: #f1f3f5;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+.items{
+  box-sizing: border-box;
+  border-bottom: 2px solid #fff;
+  margin: 0;
+  padding: 0;
+}
+.items{
+  height: 25%;
+  display: flex;
+  align-items: center;
+/*border: 1px solid #000;*/
+}
+i{
+  width: 20%;
+}
+p{
+  width: 70%;
+}
+#fav{
+  width:20%;
+  margin-left:4%; 
+  /*position: relative;
+  top:5px;*/
+  /*padding-top: 20%;*/
+}
+#fav img{
+  width: 100%;
+  height: 20px;
+}
+#showdiv1:target ~ div a[href="#showdiv1"]{
+  display: none;
+}
+#showdiv1:target ~ div a[href="#hidediv1"]{
+  display: inline-block;
+}
+#showdiv1:target ~ div .hiddendiv.nr1{
+    /*position: fixed;*/
+    color: black;
+    /*top: 42vh;*/
+    min-height: 125px;
+    min-width: 170px;
+}
+.hiddendiv > div{
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+.hiddendiv > div:hover{
+  opacity: 1;
+}
